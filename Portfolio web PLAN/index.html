@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Jeferson | Full Stack Developer & UI/UX Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">TJ</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="typing-effect">Hi, I'm Thomas Jeferson</h1>
+                <h2>Full Stack Web Developer & UI/UX Specialist</h2>
+                <p>Crafting powerful, scalable, and user-friendly digital experiences — from pixel-perfect design to robust backend solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/avatar2.jpg" alt="Muhammad Saad" class="profile-img">
+                <div class="tech-icons">
+                    <img src="images/icons/html.jpg" alt="HTML" class="icon">
+                    <img src="images/icons/css.jpg" alt="CSS" class="icon">
+                    <img src="images/icons/js.jpg" alt="JavaScript" class="icon">
+                    <img src="images/icons/react.jpg" alt="React" class="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Thomas Jeferson, a passionate Full Stack Developer with 5+ years of experience building web applications and stunning user interfaces. I specialize in creating seamless digital experiences that combine aesthetic appeal with technical excellence.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-category">
+                            <h3>Frontend</h3>
+                            <ul>
+                                <li>HTML, CSS, JavaScript</li>
+                                <li>React, Vue.js</li>
+                                <li>Tailwind, Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Backend</h3>
+                            <ul>
+                                <li>Node.js, Express</li>
+                                <li>PHP, Laravel</li>
+                                <li>Python, Django</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Database</h3>
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>MySQL, PostgreSQL</li>
+                                <li>Firebase</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>Download CV</a>
+                </div>
+                <div class="about-quote">
+                    <blockquote>
+                        "Clean code is not written by following rules. It is crafted with care."
+                        <cite>- Robert C. Martin</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Wireframes, Prototypes, User Research with Figma, Adobe XD, Photoshop</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Web Development</h3>
+                    <p>Responsive Websites, SPAs, Full Stack Projects using MERN/LAMP stack</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Graphics Design</h3>
+                    <p>Logo, Banner, Poster, Social Media Kits with professional touch</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Custom Web Solutions</h3>
+                    <p>CMS, eCommerce, APIs, Dashboards tailored to your needs</p>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class="section-title">My Portfolio</h2>
+        <div class="portfolio-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ui">UI/UX </button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <!-- Web Development Projects -->
+            <div class="portfolio-card web-card" data-category="web">
+                <img src="images/projects/ecommerce.jpg" alt="E-commerce Platform">
+                <div class="portfolio-overlay">
+                    <h3>E-commerce Platform</h3>
+                    <p>Full-featured online store with product listings, cart functionality, and secure payment processing. Built with modern web technologies for optimal performance.</p>
+                    <div class="portfolio-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://ecommerce-demo.example.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/yourusername/ecommerce-platform" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card web-card" data-category="web">
+                <img src="images/projects/social-media.jpg" alt="Social Media Dashboard">
+                <div class="portfolio-overlay">
+                    <h3>Social Media Dashboard</h3>
+                    <p>Comprehensive analytics dashboard for social media managers with real-time data visualization and performance metrics across multiple platforms.</p>
+                    <div class="portfolio-tags">
+                        <span>Vue.js</span>
+                        <span>Firebase</span>
+                        <span>Chart.js</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://social-dashboard.example.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/yourusername/social-media-dashboard" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card web-card" data-category="web">
+                <img src="images/projects/task-manager.jpg" alt="Task Management App">
+                <div class="portfolio-overlay">
+                    <h3>Task Management App</h3>
+                    <p>Productivity application featuring team collaboration, deadline tracking, and project management tools with real-time updates.</p>
+                    <div class="portfolio-tags">
+                        <span>MERN Stack</span>
+                        <span>JWT Auth</span>
+                        <span>WebSockets</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://tasks.example.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        <a href="https://github.com/yourusername/task-manager" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Design Projects -->
+            <div class="portfolio-card ui-card" data-category="ui">
+                <img src="images/projects/fitness-app.jpg" alt="Fitness App UI">
+                <div class="portfolio-overlay">
+                    <h3>Fitness App UI</h3>
+                    <p>Mobile application design for workout tracking, nutrition planning, and health monitoring with personalized recommendations.</p>
+                    <div class="portfolio-tags">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>User Flows</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://www.figma.com/file/fitness-app" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i> Figma Prototype</a>
+                        <a href="https://dribbble.com/yourusername/fitness-app" target="_blank" rel="noopener noreferrer"><i class="fas fa-palette"></i> Design Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card ui-card" data-category="ui">
+                <img src="images/projects/finance-dashboard.jpg" alt="Finance Dashboard UI">
+                <div class="portfolio-overlay">
+                    <h3>Finance Dashboard UI</h3>
+                    <p>Web application interface for personal finance management with investment tracking, budgeting tools, and data visualization.</p>
+                    <div class="portfolio-tags">
+                        <span>Adobe XD</span>
+                        <span>UX Research</span>
+                        <span>Wireframing</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://www.behance.net/finance-dashboard" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i> Case Study</a>
+                        <a href="https://www.figma.com/file/finance-dashboard" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i> Figma File</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card ui-card" data-category="ui">
+                <img src="images/projects/restaurant-app.jpg" alt="Restaurant App UI">
+                <div class="portfolio-overlay">
+                    <h3>Restaurant App UI</h3>
+                    <p>Food ordering application with menu customization, delivery tracking, and loyalty program integration.</p>
+                    <div class="portfolio-tags">
+                        <span>Sketch</span>
+                        <span>Mobile UI</span>
+                        <span>User Testing</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://www.figma.com/file/restaurant-app" target="_blank" rel="noopener noreferrer"><i class="fab fa-figma"></i> Interactive Prototype</a>
+                        <a href="https://dribbble.com/yourusername/restaurant-app" target="_blank" rel="noopener noreferrer"><i class="fas fa-palette"></i> Design Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Graphics Design Projects -->
+            <div class="portfolio-card design-card" data-category="design">
+                <img src="images/projects/brand-identity.jpg" alt="Brand Identity Design">
+                <div class="portfolio-overlay">
+                    <h3>Tech Startup Branding</h3>
+                    <p>Complete visual identity for a SaaS startup including logo, color palette, typography, and marketing materials.</p>
+                    <div class="portfolio-tags">
+                        <span>Logo Design</span>
+                        <span>Brand</span>
+                        <span>Typography</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://www.behance.net/tech-branding" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i> Full Case Study</a>
+                        <a href="https://dribbble.com/yourusername/brand-identity" target="_blank" rel="noopener noreferrer"><i class="fas fa-palette"></i> Design Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card design-card" data-category="design">
+                <img src="images/projects/packaging.jpg" alt="Product Packaging Design">
+                <div class="portfolio-overlay">
+                    <h3>Organic Product Packaging</h3>
+                    <p>Sustainable packaging design for a line of organic skincare products with eco-friendly materials.</p>
+                    <div class="portfolio-tags">
+                        <span>Packaging</span>
+                        <span>Illustration</span>
+                        <span>3D Mockups</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://www.behance.net/organic-packaging" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i> View Project</a>
+                        <a href="#" class="btn-view-mockups"><i class="fas fa-box-open"></i> 3D Mockups</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-card design-card" data-category="design">
+                <img src="images/projects/social-media-kit.jpg" alt="Social Media Kit">
+                <div class="portfolio-overlay">
+                    <h3>Social Media Content Kit</h3>
+                    <p>Complete set of templates for a digital marketing agency's social channels with consistent branding.</p>
+                    <div class="portfolio-tags">
+                        <span>Instagram</span>
+                        <span>LinkedIn</span>
+                        <span>Templates</span>
+                        
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="https://dribbble.com/yourusername/social-templates" target="_blank" rel="noopener noreferrer"><i class="fab fa-dribbble"></i> View Templates</a>
+                        <a href="#" class="btn-view-mockups"><i class="fas fa-file-download"></i> Download Kit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Portfolio Filtering -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+    
+    // Store references to one representative card from each category
+    const representativeCards = {
+        web: document.querySelector('.web-card'),
+        ui: document.querySelector('.ui-card'),
+        design: document.querySelector('.design-card')
+    };
+    
+    // Initialize - show only representative projects in "ALL" view
+    portfolioCards.forEach(card => {
+        const isRepresentative = Object.values(representativeCards).includes(card);
+        card.style.display = isRepresentative ? 'block' : 'none';
+        card.style.opacity = isRepresentative ? '1' : '0';
+        card.style.transform = isRepresentative ? 'scale(1)' : 'scale(0.95)';
+        card.style.transition = 'all 0.3s ease';
+    });
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            const filterValue = this.dataset.filter;
+            
+            // Apply filtering with animation
+            portfolioCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95)';
+                
+                setTimeout(() => {
+                    if (filterValue === 'all') {
+                        // Show only representative cards
+                        const shouldShow = Object.values(representativeCards).includes(card);
+                        card.style.display = shouldShow ? 'block' : 'none';
+                    } else {
+                        // Show all cards from selected category
+                        const shouldShow = card.dataset.category === filterValue;
+                        card.style.display = shouldShow ? 'block' : 'none';
+                    }
+                    
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 50);
+                }, 300);
+            });
+        });
+    });
+    
+    // Optional: Expand card on click
+    document.querySelectorAll('.portfolio-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Don't expand if user clicked on a link
+            if (e.target.tagName === 'A' || e.target.parentElement.tagName === 'A') {
+                return;
+            }
+            this.classList.toggle('expanded');
+        });
+    });
+});
+</script>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Have a project in mind?</h2>
+            <p>Whether you need a stunning landing page, a full-stack application, or branding, I'm ready to help.</p>
+            <a href="#contact" class="btn btn-primary">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="quote">Quote Request</option>
+                            <option value="collab">Collaboration</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to my newsletter</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> hello@ThomasJeferson.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Remote / Pakistan</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Thomas Jeferson</h3>
+                    <p>Full Stack Web Developer & UI/UX Specialist crafting digital experiences that matter.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:hello@ThomasJeferson.com">hello@ThomasJeferson.com</a></li>
+                        <li>Remote / America</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Thomas Jeferson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script>
+        emailjs.init('YOUR_USER_ID');
+    </script>
+</body>
+</html>
